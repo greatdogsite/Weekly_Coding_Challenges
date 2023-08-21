@@ -77,4 +77,4 @@ function reverseArrayAlt(array){
     return newArray;
 }
 
-// console.log(reverseArrayAlt([3,6,9]))
+console.log(reverseArrayAlt([3,6,9]))
