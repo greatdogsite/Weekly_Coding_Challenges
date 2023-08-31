@@ -77,4 +77,29 @@ function reverseArrayAlt(array){
     return newArray;
 }
 
-console.log(reverseArrayAlt([3,6,9]))
+// console.log(reverseArrayAlt([3,6,9]))
+
+
+function matchHouses(step) {
+    matchSticks = 0;
+    while(step > 0){
+        if(step > 1){
+            matchSticks += 5;
+        }
+        if(step === 1){
+            matchSticks += 6;
+        }
+        step--;
+    }
+	return matchSticks;
+}
+
+// console.log(matchHouses(1))
+// console.log(matchHouses(2))
+// console.log(matchHouses(4))
+
+function matchHousesTernary(step) {
+    return step === 0 ? 0 : step * 5 + 1
+}
+
+// console.log(matchHousesTernary(4))
